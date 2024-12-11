@@ -1,0 +1,13 @@
+entero edad
+cadena [115] nombre
+inicio
+escriba "Bienvenido/a, porfavor ingresa tu nombre"
+llamar nueva_linea
+lea nombre
+escriba "Hola: ",nombre 
+llamar nueva_linea 
+escriba "Ingresa tu edad"
+llamar nueva_linea
+lea edad
+escriba "Tu edad es: ",edad
+fin                                                                  
