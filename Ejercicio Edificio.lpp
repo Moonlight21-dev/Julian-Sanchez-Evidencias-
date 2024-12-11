@@ -1,0 +1,276 @@
+entero n, e, r, r1, l, S
+
+inicio
+
+// Ejercicio del Edificio
+
+// Numero aleatorio entre el 1 al 5
+	llamar inicializar_Aleatorio()
+	para r1<- 1 hasta 5 haga
+	r<-aleatorio ()*6
+	fin para
+		escriba "Bienvenido al ascensor"
+		llamar nueva_linea
+		escriba "En el edificio hay 10 pisos. A que piso se dirige?"
+		llamar nueva_linea
+		lea n
+			si ((n>0)y(n<11)) entonces 
+			escriba "Bienvenido al piso ", n, " Este piso tiene 5 oficinas. A que oficina desea ingresar?"
+			llamar nueva_linea
+			lea e
+			escriba "Usted se encuentra en la oficina " , e
+			llamar nueva_linea
+				fin si 
+				si (n>10) entonces
+				escriba "Numero de piso invalido"
+				fin si
+						
+			si ((e<6)y(e>0)) entonces
+			
+				caso n 
+				1: si (r=0) entonces
+				 escriba "No se asigno a ningun trabajador para apagar la luz"
+					llamar nueva_linea
+					escriba "Desea asignar a un trabajador para apagar la luz? Si lo desea ingrese 1"
+					llamar nueva_linea
+					lea S
+						si (S=1) entonces
+						escriba "Ingrese un trabajador del 1 al 5 para que apague la luz"
+						llamar nueva_linea
+						lea l
+						llamar nueva_linea
+						fin si
+							si ((l>0)y(l<6)) entonces
+						escriba "El trabajador ", l," apago la luz de la oficina ", e," del piso ", n
+						fin si
+								si ((l<1)o(l>5)) entonces
+								escriba "Numero invalido"
+								fin si
+					fin si 
+					 	si ((r>0)y(r<6)) entonces
+					 	 
+					 	 escriba "El empleado numero ", r," de la oficina ", e," fue asignado para apagar la luz"
+					 	 
+					 	fin si
+					    
+			 	 2: si (r=0) entonces
+					 escriba "No se asigno a ningun trabajador para apagar la luz"
+						llamar nueva_linea
+						escriba "Desea asignar a un trabajador para apagar la luz? Si lo desea ingrese 1"
+						llamar nueva_linea
+						lea S
+							si (S=1) entonces
+							escriba "Ingrese un trabajador del 1 al 5 para que apague la luz"
+							llamar nueva_linea
+							lea l
+							llamar nueva_linea
+							fin si
+								si ((l>0)y(l<6)) entonces
+							escriba "El trabajador ", l," apago la luz de la oficina ", e," del piso ", n
+							fin si
+									si ((l<1)o(l>5)) entonces
+									escriba "Numero invalido"
+									fin si
+						fin si 
+						 	si ((r>0)y(r<6)) entonces
+						 	 
+						 	 escriba "El empleado numero ", r," de la oficina ", e," fue asignado para apagar la luz"
+						 	 
+						 	fin si
+				3: si (r=0) entonces
+					 escriba "No se asigno a ningun trabajador para apagar la luz"
+						llamar nueva_linea
+						escriba "Desea asignar a un trabajador para apagar la luz? Si lo desea ingrese 1"
+						llamar nueva_linea
+						lea S
+							si (S=1) entonces
+							escriba "Ingrese un trabajador del 1 al 5 para que apague la luz"
+							llamar nueva_linea
+							lea l
+							llamar nueva_linea
+							fin si
+								si ((l>0)y(l<6)) entonces
+							escriba "El trabajador ", l," apago la luz de la oficina ", e," del piso ", n
+							fin si
+									si ((l<1)o(l>5)) entonces
+									escriba "Numero invalido"
+									fin si
+						fin si 
+						 	si ((r>0)y(r<6)) entonces
+						 	 
+						 	 escriba "El empleado numero ", r," de la oficina ", e," fue asignado para apagar la luz"
+						 	 
+						 	fin si
+					4: si (r=0) entonces
+						 escriba "No se asigno a ningun trabajador para apagar la luz"
+							llamar nueva_linea
+							escriba "Desea asignar a un trabajador para apagar la luz? Si lo desea ingrese 1"
+							llamar nueva_linea
+							lea S
+								si (S=1) entonces
+								escriba "Ingrese un trabajador del 1 al 5 para que apague la luz"
+								llamar nueva_linea
+								lea l
+								llamar nueva_linea
+								fin si
+									si ((l>0)y(l<6)) entonces
+								escriba "El trabajador ", l," apago la luz de la oficina ", e," del piso ", n
+								fin si
+										si ((l<1)o(l>5)) entonces
+										escriba "Numero invalido"
+										fin si
+							fin si 
+							 	si ((r>0)y(r<6)) entonces
+							 	 
+							 	 escriba "El empleado numero ", r," de la oficina ", e," fue asignado para apagar la luz"
+							 	 
+							 	fin si
+					5: si (r=0) entonces
+						 escriba "No se asigno a ningun trabajador para apagar la luz"
+							llamar nueva_linea
+							escriba "Desea asignar a un trabajador para apagar la luz? Si lo desea ingrese 1"
+							llamar nueva_linea
+							lea S
+								si (S=1) entonces
+								escriba "Ingrese un trabajador del 1 al 5 para que apague la luz"
+								llamar nueva_linea
+								lea l
+								llamar nueva_linea
+								fin si
+									si ((l>0)y(l<6)) entonces
+								escriba "El trabajador ", l," apago la luz de la oficina ", e," del piso ", n
+								fin si
+										si ((l<1)o(l>5)) entonces
+										escriba "Numero invalido"
+										fin si
+							fin si 
+							 	si ((r>0)y(r<6)) entonces
+							 	 
+							 	 escriba "El empleado numero ", r," de la oficina ", e," fue asignado para apagar la luz"
+							 	 
+							 	fin si
+				6: si (r=0) entonces
+				 escriba "No se asigno a ningun trabajador para apagar la luz"
+					llamar nueva_linea
+					escriba "Desea asignar a un trabajador para apagar la luz? Si lo desea ingrese 1"
+					llamar nueva_linea
+					lea S
+						si (S=1) entonces
+						escriba "Ingrese un trabajador del 1 al 5 para que apague la luz"
+						llamar nueva_linea
+						lea l
+						llamar nueva_linea
+						fin si
+							si ((l>0)y(l<6)) entonces
+						escriba "El trabajador ", l," apago la luz de la oficina ", e," del piso ", n
+						fin si
+								si ((l<1)o(l>5)) entonces
+								escriba "Numero invalido"
+								fin si
+					fin si 
+					 	si ((r>0)y(r<6)) entonces
+					 	 
+					 	 escriba "El empleado numero ", r," de la oficina ", e," fue asignado para apagar la luz"
+					 	 
+					 	fin si
+					    
+			 	 7: si (r=0) entonces
+					 escriba "No se asigno a ningun trabajador para apagar la luz"
+						llamar nueva_linea
+						escriba "Desea asignar a un trabajador para apagar la luz? Si lo desea ingrese 1"
+						llamar nueva_linea
+						lea S
+							si (S=1) entonces
+							escriba "Ingrese un trabajador del 1 al 5 para que apague la luz"
+							llamar nueva_linea
+							lea l
+							llamar nueva_linea
+							fin si
+								si ((l>0)y(l<6)) entonces
+							escriba "El trabajador ", l," apago la luz de la oficina ", e," del piso ", n
+							fin si
+									si ((l<1)o(l>5)) entonces
+									escriba "Numero invalido"
+									fin si
+						fin si 
+						 	si ((r>0)y(r<6)) entonces
+						 	 
+						 	 escriba "El empleado numero ", r," de la oficina ", e," fue asignado para apagar la luz"
+						 	 
+						 	fin si
+				8: si (r=0) entonces
+					 escriba "No se asigno a ningun trabajador para apagar la luz"
+						llamar nueva_linea
+						escriba "Desea asignar a un trabajador para apagar la luz? Si lo desea ingrese 1"
+						llamar nueva_linea
+						lea S
+							si (S=1) entonces
+							escriba "Ingrese un trabajador del 1 al 5 para que apague la luz"
+							llamar nueva_linea
+							lea l
+							llamar nueva_linea
+							fin si
+								si ((l>0)y(l<6)) entonces
+							escriba "El trabajador ", l," apago la luz de la oficina ", e," del piso ", n
+							fin si
+									si ((l<1)o(l>5)) entonces
+									escriba "Numero invalido"
+									fin si
+						fin si 
+						 	si ((r>0)y(r<6)) entonces
+						 	 
+						 	 escriba "El empleado numero ", r," de la oficina ", e," fue asignado para apagar la luz"
+						 	 
+						 	fin si
+					9: si (r=0) entonces
+						 escriba "No se asigno a ningun trabajador para apagar la luz"
+							llamar nueva_linea
+							escriba "Desea asignar a un trabajador para apagar la luz? Si lo desea ingrese 1"
+							llamar nueva_linea
+							lea S
+								si (S=1) entonces
+								escriba "Ingrese un trabajador del 1 al 5 para que apague la luz"
+								llamar nueva_linea
+								lea l
+								llamar nueva_linea
+								fin si
+									si ((l>0)y(l<6)) entonces
+								escriba "El trabajador ", l," apago la luz de la oficina ", e," del piso ", n
+								fin si
+										si ((l<1)o(l>5)) entonces
+										escriba "Numero invalido"
+										fin si
+							fin si 
+							 	si ((r>0)y(r<6)) entonces
+							 	 
+							 	 escriba "El empleado numero ", r," de la oficina ", e," fue asignado para apagar la luz"
+							 	 
+							 	fin si
+					10: si (r=0) entonces
+						 escriba "No se asigno a ningun trabajador para apagar la luz"
+							llamar nueva_linea
+							escriba "Desea asignar a un trabajador para apagar la luz? Si lo desea ingrese 1"
+							llamar nueva_linea
+							lea S
+								si (S=1) entonces
+								escriba "Ingrese un trabajador del 1 al 5 para que apague la luz"
+								llamar nueva_linea
+								lea l
+								llamar nueva_linea
+								fin si
+									si ((l>0)y(l<6)) entonces
+								escriba "El trabajador ", l," apago la luz de la oficina ", e," del piso ", n
+								fin si
+										si ((l<1)o(l>5)) entonces
+										escriba "Numero invalido"
+										fin si
+							fin si 
+							 	si ((r>0)y(r<6)) entonces
+							 	 
+							 	 escriba "El empleado numero ", r," de la oficina ", e," fue asignado para apagar la luz"
+							 	 
+							 	fin si
+
+		 fin caso
+		 fin si
+		 fin 			

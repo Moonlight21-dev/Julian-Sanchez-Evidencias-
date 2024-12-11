@@ -1,0 +1,115 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+4
+1
+22
+"Entrada al sanitario"
+4
+1
+21
+"¿Cual es su genero?"
+5
+1
+6
+genero
+7
+0
+1
+19
+(genero= "Hombre" )
+7
+0
+1
+20
+( genero = "Mujer" )
+13
+4
+1
+19
+"¿Cual es su edad?"
+5
+1
+4
+edad
+7
+0
+1
+12
+( edad > 12)
+7
+0
+1
+12
+( edad > 5 )
+7
+0
+1
+12
+( edad < 5 )
+13
+4
+1
+35
+"Debes ingresar con un acompañante"
+13
+13
+4
+1
+28
+"Ingresa al baño para niñas"
+13
+13
+4
+1
+30
+"Ingresa al baño para mujeres"
+13
+13
+13
+4
+1
+19
+"¿Cual es su edad?"
+5
+1
+4
+edad
+7
+0
+1
+12
+(edad > 12 )
+7
+0
+1
+12
+( edad > 5 )
+7
+0
+1
+11
+(edad < 5 )
+13
+4
+1
+35
+"Debes ingresar con un acompañante"
+13
+13
+4
+1
+28
+"Ingresa al baño para niños"
+13
+13
+4
+1
+30
+"Ingresa al baño para hombres"
+13
+13
+1

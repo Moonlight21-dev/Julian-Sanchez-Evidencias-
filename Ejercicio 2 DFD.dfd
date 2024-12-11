@@ -1,0 +1,45 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+4
+1
+40
+"Ejercicio para ingresar mi informacion"
+4
+1
+19
+"Ingresa tu nombre"
+5
+1
+6
+nombre
+4
+1
+26
+"Ingresa el primer numero"
+5
+1
+7
+numero1
+4
+1
+27
+"Ingresa el segundo numero"
+5
+1
+7
+numero2
+6
+1
+9
+Resultado
+15
+numero1+numero2
+4
+1
+41
+"Hola ",nombre, " la suma es: ",Resultado
+1

@@ -1,0 +1,31 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+4
+1
+40
+"Ejercicio para ingresar mi informacion"
+4
+1
+19
+"Ingresa tu nombre"
+5
+1
+7
+armazon
+4
+1
+27
+"Ingresa tu edad ", armazon
+5
+1
+4
+edad
+4
+1
+43
+"Hola ", armazon ," tienes " ,edad, " años"
+1

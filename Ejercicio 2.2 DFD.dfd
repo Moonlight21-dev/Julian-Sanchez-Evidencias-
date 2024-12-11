@@ -1,0 +1,34 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+4
+1
+28
+"Ingrese su usuario y clave"
+5
+1
+7
+Usuario
+5
+1
+5
+Clave
+7
+0
+1
+36
+((Usuario="Moon")and(Clave="Light"))
+4
+1
+29
+"Usuario o clave incorrectos"
+13
+4
+1
+12
+"Bienvenido"
+13
+1
