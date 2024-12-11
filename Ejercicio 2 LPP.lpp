@@ -1,0 +1,17 @@
+cadena [30] nombre
+entero numero1, numero2, resultado
+Inicio
+Escriba "Ejercicio para colocar mi informacion"
+llamar nueva_linea
+Escriba "Ingresa tu nombre"
+llamar nueva_linea
+lea nombre
+Escriba "Ingresa el primer numero"
+llamar nueva_linea
+lea numero1
+Escriba "Ingresa el segundo numero"
+llamar nueva_linea
+lea numero2
+resultado<-numero1+numero2  
+escriba "la  suma de los dos valores es: ", resultado
+fin

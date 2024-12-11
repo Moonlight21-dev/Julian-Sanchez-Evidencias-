@@ -1,0 +1,9 @@
+entero numero1
+inicio
+numero1<-1
+mientras (numero1<5) haga
+escriba "voy en :" , numero1
+llamar nueva_linea
+numero1<-numero1+1
+fin mientras
+fin

@@ -1,0 +1,38 @@
+cadena [30] genero
+entero edad
+inicio
+	escriba "Ejercicio para determinar el genero"
+	llamar nueva_linea
+	Escriba "Entrada al sanitario, ¿Cual es su genero?"
+	llamar nueva_linea
+	lea genero
+	llamar nueva_linea
+	si (genero="Hombre") o (genero="Mujer") entonces
+	escriba "Cual es tu edad?"
+	llamar nueva_linea
+	lea edad
+		si (genero="Hombre") y (edad > 12) entonces
+		escriba "Bienvenido al sanitario de hombres"
+		sino
+			si (genero="Hombre") y (edad < 5) entonces
+			escriba "Para ingresar al sanitario debes entrar con un acompañante"
+			sino 
+				si (genero="Hombre") y (edad < 12) entonces
+				escriba "Ingresa al sanitario para niños"
+				sino
+					si (genero="Mujer") y (edad > 12) entonces
+					escriba "Bienvenido al sanitario de mujeres"
+					sino
+						si (genero="Mujer") y (edad < 5) entonces
+						escriba "Para ingresar al sanitario debes entrar con un acompañante"
+						sino 
+							si (genero="Mujer") y (edad < 12) entonces
+							escriba "Ingresa al sanitario para niñas"
+					 	fin si
+					fin si
+				fin si	
+			fin si
+		fin si
+	fin si
+fin si
+fin

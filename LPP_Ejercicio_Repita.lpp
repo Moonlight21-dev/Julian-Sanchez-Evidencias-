@@ -1,0 +1,45 @@
+entero n1, n2, r, p, q
+caracter continuar
+inicio
+	llamar inicializar_Aleatorio()
+	para q<-1 hasta 3 haga
+	p<-aleatorio()
+	repita 
+       mientras (p=1) haga
+        escriba "Suma #", p
+        llamar nueva_linea
+		escriba "Ingrese el primer numero para la suma"
+		llamar nueva_linea
+		lea n1
+		escriba "Ingrese el segundo numero para la suma"
+		llamar nueva_linea
+		lea n2
+		r<-n1+n2
+		escriba "La suma es : ", r 
+	   fin mientras
+	     mientras (p=2) haga
+        escriba "Suma #", p
+        llamar nueva_linea
+		escriba "Ingrese el primer numero para la suma"
+		llamar nueva_linea
+		lea n1
+		escriba "Ingrese el segundo numero para la suma"
+		llamar nueva_linea
+		lea n2
+		r<-n1+n2
+		escriba "La suma es : ", r 
+	   fin mientras
+	     mientras (p=3) haga
+        escriba "Suma #", p
+        llamar nueva_linea
+		escriba "Ingrese el primer numero para la suma"
+		llamar nueva_linea
+		lea n1
+		escriba "Ingrese el segundo numero para la suma"
+		llamar nueva_linea
+		lea n2
+		r<-n1+n2
+		escriba "La suma es : ", r 
+	   fin mientras
+	hasta (continuar='N')
+fin

@@ -1,0 +1,44 @@
+cadena [30] hombre, mujer
+cadena [30] genero
+entero edad
+inicio
+escriba "Ejercicio para determinar el genero"
+llamar nueva_linea
+Escriba "Entrada al baño, ¿Cual es su genero?"
+llamar nueva_linea
+lea genero
+llamar nueva_linea
+si (genero="Hombre") entonces
+escriba "¿Que edad tiene?"
+sino
+si (genero="Mujer") entonces
+escriba "¿Que edad tiene?"
+llamar nueva_linea
+lea edad
+si (edad > 12) entonces
+escriba "Ingresa al baño para mujeres"
+sino 
+si (edad < 5) entonces
+escriba "Para ingresar al baño debes entrar con un acompañante"
+sino
+si (edad < 12) entonces
+escriba "Ingresa al baño para niñas"
+llamar nueva_linea
+lea edad
+si (edad > 12) entonces
+escriba "Ingresa al baño para hombres"
+sino 
+si (edad < 5) entonces
+escriba "Para ingresar al baño debes entrar con un acompañante"
+sino
+si (edad < 12) entonces
+escriba "Ingresa al baño para niños"
+fin si
+fin si
+fin si
+fin si
+fin si
+fin si
+fin si
+fin si
+fin

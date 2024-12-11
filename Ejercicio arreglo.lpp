@@ -1,0 +1,61 @@
+arreglo [10] de cadena [10] v1
+arreglo [10] de caracter v2 
+arreglo [10] de entero v3
+arreglo [10] de real v4
+entero numero
+inicio 
+escriba "Ingreso de elementos de los arreglos"
+llamar nueva_linea
+escriba "Por favor ingrese el contenido del arreglo de tipo cadena (maximo 10 caracteres)"
+llamar nueva_linea
+	para numero<-1 hasta 10 haga
+	escriba "Ingrese el [", numero, "] arreglo"
+	llamar nueva_linea
+	lea v1 [numero]
+	fin para
+			llamar nueva_linea
+			escriba "Por favor ingrese el contenido del arreglo de tipo caracter"
+			llamar nueva_linea
+				para numero<-1 hasta 10 haga
+				escriba "Ingrese el [", numero, "] arreglo"
+				llamar nueva_linea
+				lea v2 [numero]
+				fin para
+					llamar nueva_linea
+					escriba "Por favor ingrese el contenido del arreglo de tipo entero"
+					llamar nueva_linea
+						para numero<-1 hasta 10 haga
+						escriba "Ingrese el [", numero, "] arreglo"
+						llamar nueva_linea
+						lea v3 [numero]
+						fin para
+						llamar nueva_linea
+						escriba "Por favor ingrese el contenido del arreglo de tipo real"
+						llamar nueva_linea
+									para numero<-1 hasta 10 haga
+									escriba "Ingrese el [", numero, "] arreglo"
+									llamar nueva_linea
+									lea v4 [numero]
+									fin para
+    para numero <- 1 hasta 10 haga
+    llamar nueva_linea
+	escriba "La posicion [", numero, "] de el arreglo cadena, tiene el elemento: ", v1 [numero]
+	fin para
+	llamar nueva_linea
+		para numero <- 1 hasta 10 haga
+	    llamar nueva_linea
+		escriba "La posicion [", numero, "] de el arreglo caracter, tiene el elemento: ", v2 [numero]
+		fin para
+		llamar nueva_linea
+			para numero <- 1 hasta 10 haga
+		    llamar nueva_linea
+			escriba "La posicion [", numero, "] de el arreglo entero, tiene el elemento: ", v3 [numero]
+			fin para
+			llamar nueva_linea
+				para numero <- 1 hasta 10 haga
+			    llamar nueva_linea
+				escriba "La posicion [", numero, "] de el arreglo real, tiene el elemento: ", v4 [numero]
+				fin para
+				llamar nueva_linea
+			
+fin

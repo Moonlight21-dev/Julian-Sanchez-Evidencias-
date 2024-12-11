@@ -1,0 +1,31 @@
+arreglo [10] de cadena [15] kiko
+arreglo [10] de entero numero
+entero fila, columna, temporal,desc
+inicio
+	escriba "Ordenamiento Metodo Burbuja"
+	llamar nueva_linea
+	numero[1]<-8
+	numero[3]<-3
+	numero[2]<-500
+	numero[7]<--5
+	numero[10]<-15
+	numero[4]<-7
+	numero[5]<-15
+	numero[6]<-13
+	numero[8]<-4
+	numero[9]<-5
+		para fila<-1 hasta 10 haga
+			para columna<-1 hasta 10-fila haga
+				si (numero[columna] > numero[columna+1])entonces
+				 temporal<-numero[columna]
+				 numero[columna]<-numero[columna+1]
+				 numero[columna+1]<-temporal
+				fin si
+			fin para
+		fin para
+	para desc<-1 hasta 100 haga
+	llamar nueva_linea
+	escriba "El arreglo [", desc, "] tiene el valor: ", numero[desc]
+	fin para
+fin
+	

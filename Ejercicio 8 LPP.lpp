@@ -1,0 +1,17 @@
+cadena [30] usuario
+cadena [30] clave
+entero n3
+inicio
+	n3<-3
+	escriba "Ingrese su usuario"
+	llamar nueva_linea
+	lea usuario
+	llamar nueva_linea
+	escriba "Ingrese clave"
+	llamar nueva_linea
+	lea clave
+	n3<-1
+	mientras ((usuario="Moon") y (clave="Light") y (n3<4)) haga
+	
+	fin mientras
+fin

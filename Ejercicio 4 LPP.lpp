@@ -1,0 +1,55 @@
+entero n1, n2, n3
+inicio 
+n1<-70651
+n2<-34
+n3<-846
+	si ((n1<n2) y (n2<n3))entonces
+	escriba "El numero mayor es: ", n1
+	llamar nueva_linea
+	escriba "El numero mayor es: ", n2
+	llamar nueva_linea
+	escriba "El numero mayor es: ", n3
+	sino 
+		si ((n1>n2)y(n2>n3)) entonces
+		escriba "El numero mayor es: ", n1
+		llamar nueva_linea
+		escriba "El numero mayor es: ", n2
+		llamar nueva_linea
+		escriba "El numero mayor es: ", n3
+		sino
+			si ((n1>n2) y (n2<n3)) entonces
+			escriba "El numero mayor es: ", n1
+			llamar nueva_linea
+			escriba "El numero mayor es: ", n2
+			llamar nueva_linea
+			escriba "El numero mayor es: ", n3
+			sino
+				si ((n1<n2) y (n2>n3))entonces
+				escriba "El numero mayor es: ", n1
+				llamar nueva_linea
+				escriba "El numero mayor es: ", n2
+				llamar nueva_linea
+				escriba "El numero mayor es: ", n3
+				sino 
+					si ((n1<n2)y(n2>n3)y(n1<n3)) entonces
+					escriba "El numero mayor es: ", n1
+					llamar nueva_linea
+					escriba "El numero mayor es: ", n2
+					llamar nueva_linea
+					escriba "El numero mayor es: ", n3
+					sino
+						si ((n1>n2) y (n2<n3)) entonces
+						escriba "El numero mayor es: ", n1
+						llamar nueva_linea
+						escriba "El numero mayor es: ", n2
+						llamar nueva_linea
+						escriba "El numero mayor es: ", n3
+						sino
+						escriba "Hola"
+						fin si
+					fin si
+				fin si
+			fin si
+		fin si
+	fin si
+fin							

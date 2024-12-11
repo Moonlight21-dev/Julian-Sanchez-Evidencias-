@@ -1,0 +1,17 @@
+entero num1, num2, tabla, inicial, fina, X
+inicio
+	escriba "Ingrese el numero inicial de la tabla"
+	lea inicial
+	llamar nueva_linea
+		escriba "Ingresa el numero Final de la tabla"
+		lea fina
+		llamar nueva_linea
+			para num1<-inicial hasta fina haga
+			escriba "Tabla del: ", num1
+				para X<-1 hasta 5 haga
+				num2<-num1*X
+				escriba num1, " por ", X, " igual a: ", num2
+				llamar nueva_linea
+			fin para
+		fin para
+	fin

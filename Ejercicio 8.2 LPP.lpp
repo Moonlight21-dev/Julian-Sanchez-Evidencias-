@@ -1,0 +1,25 @@
+entero n1
+cadena [30] usuario
+cadena [30] clave
+inicio
+ n1<-3
+ mientras (n1>=0) haga 
+ Escriba "Ingrese su Usuario"
+ llamar nueva_linea
+ lea usuario
+ escriba "Ingrese su Clave"
+ llamar nueva_linea
+ lea clave
+ 	si(usuario= "Moon") y( clave="Light") entonces
+ 	escriba "Bienvenido/a"
+ 	n1<-0
+ 	sino
+        llamar nueva_linea 	
+ 		escriba "Usuario o clave incorrectos"
+ 		llamar nueva_linea
+ 		escriba "Tiene: ", n1 , " Intentos restantes"
+ 		llamar nueva_linea
+ 	fin si
+ 	n1<-n1-1
+ fin mientras
+fin
