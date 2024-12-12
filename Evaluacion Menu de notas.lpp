@@ -1,0 +1,87 @@
+entero m, nota, divi, sum, prom
+arreglo [10] de entero n
+caracter continuar, terminar
+inicio 
+
+//Evaluacion Menu de Calificaciones
+
+	repita 	
+	escriba "Menu para gestionar las calificaciones"
+	llamar nueva_linea
+	escriba "Ingrese una de las 4 opciones que contiene el menu"
+	llamar nueva_linea
+	escriba "1. Ingresar las calificaciones."
+	llamar nueva_linea
+	escriba "2. Sacar el promedio de las calificaciones."
+	llamar nueva_linea
+	escriba "3. Las calificaciones por encima del promedio."
+	llamar nueva_linea
+	escriba "4. Salir del programa."
+	llamar nueva_linea
+	lea m
+
+		caso m
+		
+		1: //Ingresar calificaciones
+		escriba "El programa unicamente admite 10 notas con calificacion maxima de 100 y minima de 0"
+		llamar nueva_linea
+			para nota<-1 hasta 10 haga
+			escriba "Ingrese la [", nota,"] nota"
+			llamar nueva_linea
+			lea n [nota]
+			escriba "La nota [", nota, "] es: ", n[nota]
+			llamar nueva_linea
+			fin para
+			
+			escriba "Desea volver al menu? Si la respuesta es si ingrese cualquier caracter"
+			llamar nueva_linea
+			escriba "Si la respuesta es no ingrese N"
+			llamar nueva_linea
+			lea continuar
+		
+			2: //Promedio
+		
+			divi<-10
+		
+			sum<-n[1]+n[2]+n[3]+n[4]+n[5]+n[6]+n[7]+n[8]+n[9]+n[10]
+		
+			prom<-sum/divi
+			escriba "El promedio de las calificaciones es: ", prom
+			llamar nueva_linea
+			escriba "Desea volver al menu? Si la respuesta es si ingrese cualquier caracter"
+			llamar nueva_linea
+			escriba "Si la respuesta es no ingrese N"
+			llamar nueva_linea
+			lea continuar
+			
+			3: //Calificaciones por encima del promedio
+			nota<-1
+			mientras (nota>prom) haga
+			nota<-nota+1
+			escriba "El promedio es de: ", prom
+			llamar nueva_linea
+			escriba "La nota [", nota,"] esta por encima del promedio"
+			 
+			fin mientras
+			
+			
+			escriba "Desea volver al menu? Si la respuesta es si ingrese cualquier caracter"
+			llamar nueva_linea
+			escriba "Si la respuesta es no ingrese N"
+			llamar nueva_linea
+			lea continuar
+			
+			
+			4: //Salida
+			escriba "Si esta seguro que desea salir del programa ingrese S"
+			llamar nueva_linea
+			escriba "Si desea volver al menu ingrese otro caracter"
+			llamar nueva_linea
+			lea terminar
+		
+		
+		fin caso
+		
+	hasta (continuar='N')o(terminar='S')
+
+fin
