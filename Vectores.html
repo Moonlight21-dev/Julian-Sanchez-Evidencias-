@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if y else</title>
+</head>
+<body>
+    <form>
+        <meta charset="UTF-8">
+        Numero <input type="number" id="numero"><br>
+        <button type="button" onclick="mostrarMensaje()">Mostrar Mensaje</button>
+    </form>
+    <script>
+        function mostrarMensaje()
+        {
+            let numerito = document.getElementById('numero').value;
+            let vector=[5];
+            vector[0]=34;
+            vector[1]=452;
+            vector[2]=652;
+            vector[3]="lola";
+            vector[4]=259;
+            vector[5]=152;
+            vector[6]="peeeeeeeeeeeeeeeeee";
+            vector[7]=546543;
+            vector[9]=546543;
+            for(let i=-1; i<=6; i++)
+            {
+                document.write("Estoy en la posición: " + vector[i] + "<br>")
+            }
+        }
+        for (let i=0; i<10; i++)
+        {
+            if(i>=0 && i<6)
+            {
+                document.write("Dentro del índice ["+i+"] tenemos"+ vector[i]+ "<br>");
+            }
+            else
+            {
+                if(i>=6)
+                {
+                    document.write("<br><br><br>");
+                }
+                else
+                {
+                    document.write("Dentro del índice["+i+"] tenemos"+vector[i]+"fuera del rango <br>" );
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pushpin en Materialize</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        .menu {
+            width: 300px;
+            background: #f8f9fa;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h3>Ejemplo de Pushpin</h3>
+        <p>Cuando hagas scroll, el menú se quedará fijo en su posición.</p>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m4">
+            <div class="menu" id="menu">
+                <h5>Menú Fijo</h5>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col s12 m8">
+            <p style="height: 1500px;">Haz scroll para ver el efecto Pushpin.</p>
+        </div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="bgmascotas.jpeg" alt="Fondo Parallax">
+        </div>
+    </div>
+
+    <a>aa</a>
+    <!-- Importar Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elem = document.getElementById('menu');
+            M.Pushpin.init(elem, {
+                top: 200,  // Posición donde se fijará
+                bottom: 1000, // Límite donde se "despega"
+                offset: 0
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.parallax');
+            M.Parallax.init(elems);
+        });
+      
+    </script>
+
+</body>
+</html>

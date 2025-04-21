@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* let edad=prompt("Ingrese su edad");
+        let categoria;
+            if (edad<13 && edad>0)
+                {
+                    categoria="Niño"; 
+                }
+            else
+                {
+                    if (edad<18 && edad>0) 
+                        {
+                            categoria="Adolescente";
+                        }
+                    else    
+                        {
+                            if (edad >17) 
+                                {
+                                    categoria="Adulto";
+                                }
+                            else
+                                {
+                                    categoria="No valido";
+                                }
+                        }
+                }
+            document.write(categoria);*/
+
+            let edad1=parseInt(prompt("Ingrese su edad"));
+            let categoria1= edad1>0 && edad1<13? "Niño":             //Los operadores ternarios funcionan agregando el signo "?" y ":" al final de lo que se quiere declarar
+                            edad1>12 && edad1<18? "Adolescente":
+                            edad1>17? "Adulto":
+                                      "No valida";
+                            document.write("La persona con "+ edad1 +" años esta categorizada como " +categoria1);
+        
+    </script>
+</body>
+</html>

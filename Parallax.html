@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax en Materialize</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        .parallax-container {
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor Parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="bgmascotas.jpeg" alt="Fondo Parallax">
+        </div>
+    </div>
+
+    <h3 class="center-align">Contenido después del Parallax</h3>
+    <p class="container">El efecto Parallax da una sensación de profundidad mientras se desplaza la página.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+
+    
+    <!-- Importar Materialize JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.parallax');
+            M.Parallax.init(elems);
+        });
+      
+    </script>
+
+</body>
+</html>

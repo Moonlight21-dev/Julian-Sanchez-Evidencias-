@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sumas Impares de N Primeros Números</title>
+</head>
+<body>
+
+  <h2>Sumas Impares de los N Primeros Números (1 a 500)</h2>
+
+  <script>
+    function mostrarSumasImpares() {
+      for (let n = 1; n <= 500; n++) {
+        // Fórmula directa para la suma de los n primeros números naturales
+        let suma = (n * (n + 1)) / 2;
+
+        if (suma % 2 !== 0) {
+          document.write("n = " + n + " → Suma = " + suma + "<br>");
+        }
+      }
+    }
+
+    mostrarSumasImpares();
+  </script>
+
+</body>
+</html>

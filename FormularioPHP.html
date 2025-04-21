@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body style="font-family: Arial Rounded MT Bold;"><center>
+    <br><br><br>
+    <form action="miFormulario.php" method="POST">
+        <table border="5">  <!-- La tabla debe tener un borde "border" para que se muestre, y tambien un table ro.. "tr", 
+                            "td" para asignar las columnas y filas. El "colspan" da el espacio entre columnas. "aling = "center"" alinea el texto en el centro -->
+            <tr>
+                <td colspan="5" align="center"><h2>Datos del Usuario</h2></td>
+            </tr>
+            <tr>                                                                    
+                <td colspan="5" align="center">Usuario: <br><input type="text" name="usuario" required placeholder="Ingrese su nombre de usuario"></td>      <!-- Dentro del input se puede colocar el "required" lo que hace que sea obligatorio ingresar el dato-->             
+            </tr>
+            <tr>
+                <td colspan="5" align="center">Correo Electronico: <br><input type="email" name="correo" required placeholder="Ingrese su correo electronico"></td>
+            </tr>
+            <tr>
+                <td colspan="5" align="center">Contraseña: <br><input type="password" name="contraseña" required placeholder="Ingrese su contraseña"></td>
+            </tr>   
+            <tr>
+                <td colspan="5" align="center">País: 
+                    <select name="pais" required>
+                        <option value="seleccion" placeholder="Seleccione su pais"></option>
+                        <option value="colombia">Colombia</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="canada">Canada</option>
+                        <option value="españa">España</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="usa">Estados Unidos</option>
+                        <option value="mexico">Mexico</option>
+                        <option value="japon">Japon</option>
+                        <option value="coreadelsur">Corea del Sur</option>
+                        <option value="china">China</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" align="center">Color Favorito: 
+                    <select name="color" required>
+                        <option value="seleccion"></option>
+                        <option value="verde">Verde</option>
+                        <option value="rojo">Rojo</option>
+                        <option value="amarillo">Amarillo</option>
+                        <option value="morado">Morado</option>
+                        
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" align="center">Comida del Dia Favorita: 
+                    <select name="comida" required>
+                        <option value="seleccion"></option>
+                        <option value="desayuno">Desayuno</option>
+                        <option value="almuerzo">Almuerzo</option>
+                        <option value="cena">Cena</option>
+                       
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" align="center">Fecha de Nacimiento: <input type="date" name="fecha" required></td>
+            </tr>
+            <tr>                                                                    
+                <td colspan="5" align="center">Nombre Acudiente: <br><input type="text" name="nombreac" required placeholder="Ingrese el nombre de su acudiente"></td>      <!-- Dentro del input se puede colocar el "required" lo que hace que sea obligatorio ingresar el dato-->             
+            </tr>
+            <tr>
+                <td colspan="5" align="center">Correo Electronico Acudiente: <br><input type="email" name="emailac" required placeholder="Ingrese el correo electronico de su acudiente"></td>
+            </tr>
+            <tr>
+                <td colspan="5" align="center">Fecha de Nacimiento de su Acudiente: <input type="date" name="fechaac" required></td>
+            </tr> 
+            
+            <tr>
+                <td ><input type="checkbox" name="check1" required>Acepta los terminos y condiciones.</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="check2">Acepta politica de cookies.</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="check3" >Marque esta opcion para recibir noticias y actualizaciones de la pagina.</td>
+            </tr>
+            <tr>
+            <td><center><button type="reset">Borrar todo</button><button type="submit" name="btnenviar">Enviar</button></center></td>
+            </tr>
+        </table>
+
+    </form>
+    </center>
+</body>
+</html>

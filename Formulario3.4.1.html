@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Pacientes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef2f3;
+      padding: 30px;
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 15px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+  <center><h2>Formulario de Registro de Pacientes</h2></center>
+  <form id="pacienteForm">
+    <label for="tipoId">Tipo de Identificación:</label>
+    <select id="tipoId" required>
+      <option value="">Seleccione</option>
+      <option value="CC">Cédula de Ciudadanía</option>
+      <option value="TI">Tarjeta de Identidad</option>
+      <option value="CE">Cédula de Extranjería</option>
+    </select>
+
+    <label for="numId">Número de Identificación:</label>
+    <input type="number" id="numId" required>
+
+    <label for="nombres">Nombres:</label>
+    <input type="text" id="nombres" required>
+
+    <label for="apellidos">Apellidos:</label>
+    <input type="text" id="apellidos" required>
+
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" min="0" required>
+
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" pattern="[0-9]{7,10}" required>
+
+    <label for="estrato">Estrato:</label>
+    <select id="estrato" required>
+      <option value="">Seleccione</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+    </select>
+
+    <button type="submit">Guardar Paciente</button>
+  </form>
+
+  <script>
+    document.getElementById('pacienteForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const paciente = {
+        tipoId: document.getElementById('tipoId').value,
+        numId: document.getElementById('numId').value.trim(),
+        nombres: document.getElementById('nombres').value.trim(),
+        apellidos: document.getElementById('apellidos').value.trim(),
+        edad: document.getElementById('edad').value,
+        direccion: document.getElementById('direccion').value.trim(),
+        telefono: document.getElementById('telefono').value.trim(),
+        estrato: document.getElementById('estrato').value
+      };
+
+      // Validación básica
+      if (Object.values(paciente).some(val => val === "")) {
+        alert("Todos los campos son obligatorios.");
+        return;
+      }
+
+      // Enviar al "servidor" (simulado)
+      console.log("Paciente registrado:", paciente);
+      alert("Paciente guardado exitosamente");
+
+      // Resetear formulario
+      document.getElementById('pacienteForm').reset();
+    });
+  </script>
+
+</body>
+</html>

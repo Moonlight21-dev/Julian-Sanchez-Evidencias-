@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejecicio PhP</title>
+</head>
+<body style="font-family: Arial Rounded MT Bold;"><center>
+    <br><br><br>
+    <form action="miSelectorPHP.php" method="POST">
+        <h1>Opciones del Menu:</h1>
+        <h3><p><center>1. Buenos Dias<br><br>2. Buenas Tardes<br><br>3. Buenas Noches</center></p></h3>
+        <br>
+        <p><center>Ingrese uno de los numeros del menu anterior
+            <input type="number" name="menu" required>
+        </center></p>
+        <p><center><br>Seleccione una de las siguientes ciudades
+            <select name="ciudad">
+                <option value="bogota">Bogota</option>              
+                <option value="cali">Cali</option>        
+                <option value="medellin">Medellin</option>             
+                <option value="barranquilla">Barranquilla</option>              
+                <option value="santa_marta">Santa Marta</option>
+            </select>
+        Seleccione uno de los barrios de las ciudades
+        <select name="barrios">
+            <option value="barrio1">Barrio 1</option>              
+            <option value="barrio2">Barrio 2</option>        
+            <option value="barrio3">Barrio 3</option>             
+            <option value="barrio4">Barrio 4</option>              
+            <option value="barrio5">Barrio 5</option>
+        </select>
+        <button type="submit" name="btnoperar">Operar</button>
+        </center></p>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal en Materialize</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+
+    <!-- Botón para abrir el modal -->
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Abrir Modal</a>
+
+    <!-- Estructura del Modal -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Título del Modal</h4>
+            <p>Este es un mensaje dentro del modal.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+        </div>
+    </div>
+
+    <!-- Importar Materialize JS y jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            M.Modal.init(elems);
+        });
+    </script>
+
+</body>
+</html>
